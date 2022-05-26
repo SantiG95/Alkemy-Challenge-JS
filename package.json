@@ -1,0 +1,26 @@
+{
+  "name": "alkemy-challenge-js",
+  "version": "1.0.0",
+  "description": "Challenge full stack JS para Alkemy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiG95/Alkemy-Challenge-JS.git"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "author": "Santiago Guerra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SantiG95/Alkemy-Challenge-JS/issues"
+  },
+  "homepage": "https://github.com/SantiG95/Alkemy-Challenge-JS#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
