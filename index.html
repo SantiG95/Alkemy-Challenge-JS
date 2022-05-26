@@ -8,48 +8,113 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div>
-        <div>
-            $0
-        </div>
-        <div>
-            Nuevo movimiento
-        </div>
-        <div>
-            <table>
-                <tr>
-                    <td>Concepto</td>
-                    <td><Input></Input></td>
-                </tr>
-                <tr>
-                    <td>Monto</td>
-                    <td><Input></Input></td>
-                </tr>
-                <tr>
-                    <td>Fecha</td>
-                    <td><Input></Input></td>
-                </tr>
-                <tr>
-                    <td>Tipo de movimiento</td>
-                    <td><Select>
-                        <option value="" selected disabled>Seleccione una opcion...</option>
-                        <option value="">Ingreso</option>
-                        <option value="">Egreso</option>
-                    </Select></td>
-                </tr>
-            </table>
-            <input type="submit" value="Enviar">
-        </div>
-    </div>
-    <div>
-        <table>
+    <div id="main-white-space">
+        <p id="balance-title">Su balance...</p>
+        <p id="balance-text">$0</p>
+        <table id="action-table">
             <tr>
-                <td>Concepto</td>
                 <td>Fecha</td>
-                <td>Monto</td>
+                <td>Concepto</td>
+                <td>Importe</td>
                 <td>Acciones</td>
             </tr>
+            <tr>
+                <td>25/03/2015</td>
+                <td>Compre un alfajor</td>
+                <td>$80</td>
+                <td>
+                    <input type="button" value="Modificar">
+                    <input type="button" value="Borrar">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
         </table>
+        
     </div>
+    
+    <div class="div-form" id="div-form">
+        <p>Agregar un movimiento</p>
+        <form action="">
+            <div class="section-div-form">
+                <label for="conceptoLabel">Concepto</label>
+                <input type="text" name="conceptoLabel" id="conceptoLabel">
+            </div>
+            <div class="section-div-form">
+                <label for="montoLabel">Importe</label>
+                <input type="number" name="montoLabel" id="importeLabel">
+            </div>
+            <div class="section-div-form">
+                <label for="fechaLabel">Fecha</label>
+                <input type="date" name="fechaLabel" id="fechaLabel">
+            </div>
+            <div class="section-div-form">
+                <label for="gananciaOption">Ingreso</label>
+                <input type="radio" name="movimientoLabel" id="ingresoOption">
+                <label for="gastoOption">Egreso</label>
+                <input type="radio" name="movimientoLabel" id="egresoOption">
+            </div>
+            <div class="section-div-form">
+                <input type="submit" value="Enviar" id="submitButton">
+                <input type="button" value="Borrar" id="eraseButton">
+            </div>
+        </form>
+        
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/newMovementForm.js"></script>
 </body>
 </html>
