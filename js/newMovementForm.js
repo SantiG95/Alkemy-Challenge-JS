@@ -54,7 +54,7 @@ newMovementForm.addEventListener("submit", e => {
 
 
 function validateText(field){
-    var lenght = field.value.trim().lenght
+    var lenght = field.value.trim().length
     this.validFields[0] = lenght != 0 ? true : false
     validateFields()
 }
@@ -77,10 +77,12 @@ function validateRadio(field){
 function validateFields(){
     var allOK = true
     validFields.forEach(field => {
-        if(!field) allOK = false
+        if(field == false){
+            allOK = false
+        }
     })
 
-    if(allOK) this.submitButton.disabled = false
+    this.submitButton.disabled = !allOK
 }
 
 function clearFields(){
