@@ -1,8 +1,9 @@
 import express from "express"
 
+import movementsRouter from "./router/movementsRouter.js"
 import config from "./config.js"
 
-import DB_Mongo from ".model/DB_Mongo.js"
+import DB_Mongo from "./model/DB_Mongo.js"
 DB_Mongo.connectDB()
 
 const app = express()

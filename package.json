@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "alkemy-challenge-js",
   "version": "1.0.0",
   "description": "Challenge full stack JS para Alkemy",
@@ -21,6 +22,8 @@
   },
   "homepage": "https://github.com/SantiG95/Alkemy-Challenge-JS#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "mongoose": "^6.3.4"
   }
 }

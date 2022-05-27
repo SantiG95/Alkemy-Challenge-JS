@@ -5,7 +5,7 @@ const movementSchema = mongoose.Schema({
     fecha: Date,
     concepto: String,
     monto: Number,
-    ingreso: Boolean 
+    tipoMovimiento: String 
 })
 
 const MovementModel = mongoose.model("movements", movementSchema)
