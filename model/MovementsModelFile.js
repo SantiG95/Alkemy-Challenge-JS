@@ -17,14 +17,15 @@ class MovementsModelFile{
         await fs.promises.writeFile(this.fileName, JSON.stringify(movements, null, '\t') )
     }
 
-    async getId(){
-        return movements.length ? (movements[movements.length -1].id + 1) : 1
+    getId = movements => {
+        return movements.length? (movements[movements.length - 1].id + 1) : 1
     }
 
     async createMovement(movement){
         let movements = await this.readMovementsFile()
 
         movement.id = this.getId(movements)
+        console.log(movement)
         movements.push(movement)
 
         await this.saveMovementsFile(movements)

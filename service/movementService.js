@@ -13,6 +13,7 @@ const getMovements = async () => {
 }
 
 const saveMovement = async movement => {
+    console.log(movement)
     var validationError = MovementValidation.validate(movement)
     if(!validationError){
         return await model.createMovement(movement)
