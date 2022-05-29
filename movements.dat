@@ -1,16 +1,9 @@
 [
 	{
-		"fecha": "2022-05-10",
-		"concepto": "asda",
-		"monto": "342",
-		"tipoMovimiento": "INGRESO",
-		"id": 1
-	},
-	{
 		"fecha": "2022-05-11",
-		"concepto": "cxzxc",
-		"monto": "2131",
+		"concepto": "werwer",
+		"monto": "3543",
 		"tipoMovimiento": "EGRESO",
-		"id": 2
+		"id": 1
 	}
 ]

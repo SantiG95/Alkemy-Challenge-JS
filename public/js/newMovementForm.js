@@ -1,3 +1,4 @@
+var testVar = null
 class newMovementForm {
     inputs = null
     newMovementForm = null
@@ -137,9 +138,27 @@ function renderMovements(movements){
             var template = Handlebars.compile(hbsTemplate)
             var html = template({movements})
             document.getElementById("action-table").innerHTML = html
+            updateTotal()
         }
     })
     xhr.send()
+}
+
+function updateTotal(){
+    var totalAmount = 0
+    var montoCells = document.getElementsByClassName("montoCell");
+    var tableRows = document.getElementsByTagName("tr")
+    testVar = montoCells
+    for(var i = 0; i < montoCells.length; i++){
+        if(tableRows[i+2].classList.contains("INGRESO")){
+            totalAmount += parseFloat(montoCells[i].innerText.slice(1))
+        }
+        else{
+            totalAmount -= parseFloat(montoCells[i].innerText.slice(1))
+        }
+        
+    }
+    document.getElementById("balance-text").innerText = `$${totalAmount}`
 }
 
 let newMovementFormVar = null

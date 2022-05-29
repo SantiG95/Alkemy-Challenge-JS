@@ -63,12 +63,12 @@ p{
 }
 
 #action-table{
-    background-color: violet;
+    background-color: rgb(173, 173, 173);
     width: 100%;
 }
 
 #action-table td{
-    background-color: yellow;
+    
     height: 50px;
     padding: 15px;
     text-align: center;
@@ -80,4 +80,12 @@ p{
 
 #action-table td:nth-child(4){
     width: 10%;
+}
+
+.INGRESO{
+    background-color: rgba(194, 255, 103, 0.658);
+}
+
+.EGRESO{
+    background-color: #fc5a5ac2;
 }

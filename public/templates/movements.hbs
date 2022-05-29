@@ -1,0 +1,27 @@
+{{#if movements.length}}
+    <table>
+        <tr>
+            <th>Fecha</th>
+            <th>Concepto</th>
+            <th>Monto</th>
+            <th>Acciones</th>
+        </tr>
+        <tr>
+            {{#each movements}}
+                <tr class="{{tipoMovimiento}}">
+                    <td class="dateCell">{{fecha}}</td>
+                    <td class="conceptoCell">{{concepto}}</td>
+                    <td class="montoCell">${{monto}}</td>
+                    <td>
+                        <input type="button" value="Modificar">
+                        <input type="button" value="Borrar" onclick="movementController.eraseMovement('{{id}}')">
+                    </td>
+                </tr>
+            {{/each}}
+        </tr>
+        
+    </table>
+
+{{else}}
+    <p>No hay nada aca</p>
+{{/if}}
