@@ -13,8 +13,8 @@
                     <td class="conceptoCell">{{concepto}}</td>
                     <td class="montoCell">${{monto}}</td>
                     <td>
-                        <input type="button" value="Modificar">
-                        <input type="button" value="Borrar" onclick="movementController.eraseMovement('{{id}}')">
+                        <input type="button" value="Modificar" class="updateButton" disabled onclick="movementController.updateMovement('{{id}}')">
+                        <input type="button" value="Borrar" class ="eraseButton" onclick="movementController.eraseMovement('{{id}}')">
                     </td>
                 </tr>
             {{/each}}

@@ -1,4 +1,5 @@
 body{
+    background-image: url("../images/wood.png");
     background-color: rgb(255, 191, 73);
     display: flex;
     flex-direction: center ;
@@ -11,20 +12,21 @@ p{
 
 .div-form{
     width: 20%;
-    background-color: red;
+    background-color: rgb(177, 170, 170);
     padding: 0.5%;
     margin: 3%;
+    border-radius: 20px;
+    box-shadow: 5px 10px 7px;
 }
 
-.div-form p{
-    padding: 3%;
-    font-size: 20px;
+.div-form h2{
+    padding: 2%;
 }
 
 .div-form div{
     display: flex;
     justify-content: space-between;
-    background-color: green;
+    
 }
 
 .section-div-form{
@@ -51,6 +53,7 @@ p{
     border-radius: 20px;
     padding: 2%;
     margin: 3%;
+    box-shadow: 5px 10px 7px;
 }
 
 #balance-div{

@@ -17,8 +17,8 @@ class MovementController extends MovementModel {
     }
 
     async updateMovement(id){
-        let movement = newMovementForm.readEnteredMovement()
-        newMovementForm.clearForm()
+        let movement = newMovementFormVar.readEnteredMovement()
+        newMovementFormVar.clearFields()
 
         let updatedMovement = await movementService.updateMovementService(id, movement)
 

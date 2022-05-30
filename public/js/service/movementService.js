@@ -1,5 +1,5 @@
 class MovementService{
-    URL_MOVEMENTS = "api/movements/"
+    URL_MOVEMENTS = "api/movements"
 
     async getMovementsService(){
         let movements = await http.get(this.URL_MOVEMENTS)

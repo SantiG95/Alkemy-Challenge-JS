@@ -38,7 +38,7 @@ class MovementsModelFile{
     }
 
     async readMovement(id){
-        let movements = this.readMovementProducts()
+        let movements = this.readMovements()
         return movements.find(movement => movement.id == id) || {}
     }
 

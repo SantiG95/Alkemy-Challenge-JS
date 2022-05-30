@@ -1,9 +1,37 @@
 [
 	{
 		"fecha": "2022-05-11",
-		"concepto": "werwer",
-		"monto": "3543",
+		"concepto": "Pago de Internet",
+		"monto": "4000",
 		"tipoMovimiento": "EGRESO",
 		"id": 1
+	},
+	{
+		"fecha": "2022-04-27",
+		"concepto": "Pago de Telefono",
+		"monto": "2000",
+		"tipoMovimiento": "EGRESO",
+		"id": 3
+	},
+	{
+		"fecha": "2022-05-03",
+		"concepto": "Ventas de tortas",
+		"monto": "5600",
+		"tipoMovimiento": "INGRESO",
+		"id": 4
+	},
+	{
+		"fecha": "2022-05-19",
+		"concepto": "Ventas de sandwiches",
+		"monto": "3200",
+		"tipoMovimiento": "INGRESO",
+		"id": 5
+	},
+	{
+		"fecha": "2022-05-12",
+		"concepto": "Pago del prestamo bancario",
+		"monto": "7000",
+		"tipoMovimiento": "EGRESO",
+		"id": 6
 	}
 ]

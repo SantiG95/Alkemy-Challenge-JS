@@ -25,7 +25,7 @@ class DB_Mongo {
                     useNewUrlParser: true,
                     useUnifiedTopology: true
                 })
-                console.log("Data base CONNECTED!!")
+                console.log("Database CONNECTED!!")
                 DB_Mongo.connectionOK = true
             }
         }

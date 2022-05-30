@@ -99,6 +99,7 @@ class newMovementForm {
         })
     
         this.submitButton.disabled = !allOK
+        changeUpdateButtons(!allOK)
     }
 
     getIndex(field){
@@ -138,6 +139,7 @@ function renderMovements(movements){
             var template = Handlebars.compile(hbsTemplate)
             var html = template({movements})
             document.getElementById("action-table").innerHTML = html
+            updateButtons = document.querySelectorAll(".updateButton")
             updateTotal()
         }
     })
@@ -161,7 +163,15 @@ function updateTotal(){
     document.getElementById("balance-text").innerText = `$${totalAmount}`
 }
 
+function changeUpdateButtons(bool){
+    updateButtons.forEach(button => {
+        button.disabled = bool
+    })
+}
+
+
 let newMovementFormVar = null
+let updateButtons = null
 
 async function initForm(){
     newMovementFormVar = new newMovementForm(renderMovements, movementController.saveMovement)
